@@ -11,7 +11,7 @@
 <meta property="og:url" content="http://ioswyq.github.io/wyq.github.io/2015/12/26/multi-github-account-ssh/index.html">
 <meta property="og:site_name" content="WYQ Apps">
 <meta property="og:description" content="如何在一台电脑使用多个github帐号，ssh切换处理，并建立相应的ssh连接。">
-<meta property="og:updated_time" content="2015-12-26T09:45:01.000Z">
+<meta property="og:updated_time" content="2015-12-26T10:00:12.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="多个Github帐号的ssh配置">
 <meta name="twitter:description" content="如何在一台电脑使用多个github帐号，ssh切换处理，并建立相应的ssh连接。">
@@ -99,13 +99,14 @@
 <h3 id="u9ED8_u8BA4SSH_u53EA_u4F1A_u8BFB_u53D6id_rsa_uFF0C_u6240_u4EE5_u4E3A_u4E86_u8BA9SSH_u8BC6_u522B_u65B0_u7684_u79C1_u94A5_uFF0C_u9700_u8981_u5C06_u5176_u6DFB_u52A0_u5230SSH_agent"><a href="#u9ED8_u8BA4SSH_u53EA_u4F1A_u8BFB_u53D6id_rsa_uFF0C_u6240_u4EE5_u4E3A_u4E86_u8BA9SSH_u8BC6_u522B_u65B0_u7684_u79C1_u94A5_uFF0C_u9700_u8981_u5C06_u5176_u6DFB_u52A0_u5230SSH_agent" class="headerlink" title="默认SSH只会读取id_rsa，所以为了让SSH识别新的私钥，需要将其添加到SSH agent"></a>默认SSH只会读取id_rsa，所以为了让SSH识别新的私钥，需要将其添加到SSH agent</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-add ~/.ssh/<span class="number">111</span>_rsa</span><br><span class="line">ssh-add ~/.ssh/<span class="number">222</span>_rsa</span><br></pre></td></tr></table></figure>
 <h3 id="u6D4B_u8BD5"><a href="#u6D4B_u8BD5" class="headerlink" title="测试"></a>测试</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -vT git@<span class="number">111</span>.github.com</span><br></pre></td></tr></table></figure>
 <p>结果如下<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hi <span class="number">111</span>! You<span class="string">'ve successfully authenticated, but GitHub does not provide shell access.</span></span><br></pre></td></tr></table></figure></p>
-<h2 id="git_u5E10_u53F7_u914D_u7F6E"><a href="#git_u5E10_u53F7_u914D_u7F6E" class="headerlink" title="git帐号配置"></a>git帐号配置</h2><p>等待更新</p>
+<h2 id="u81EA_u52A8ssh_u9A8C_u8BC1"><a href="#u81EA_u52A8ssh_u9A8C_u8BC1" class="headerlink" title="自动ssh验证"></a>自动ssh验证</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://github.com/ioswyq/wyq.github.io.git</span><br></pre></td></tr></table></figure>
+<p>转换如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git@<span class="number">111</span>.github.com:ioswyq/wyq.github.io.git</span><br></pre></td></tr></table></figure></p>
 <h2 id="u53C2_u8003"><a href="#u53C2_u8003" class="headerlink" title="参考"></a>参考</h2><p><a href="http://stackoverflow.com/questions/32910928/ssh-keygen-no-such-file-or-directory" target="_blank" rel="external">SSH-Keygen</a><br><a href="http://stormzhang.com/other/2013/10/16/github-multiply-ssh-key/" target="_blank" rel="external">多个github帐号的SSH key切换</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://ioswyq.github.io/wyq.github.io/2015/12/26/multi-github-account-ssh/" data-id="ciimxbhzp0000yo5j0g77fcjl" class="article-share-link">Share</a>
+      <a data-url="http://ioswyq.github.io/wyq.github.io/2015/12/26/multi-github-account-ssh/" data-id="ciimy68ri00006e5jbddx8wgg" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/wyq.github.io/tags/github/">github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/wyq.github.io/tags/ssh/">ssh</a></li></ul>
