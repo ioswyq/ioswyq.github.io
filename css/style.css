@@ -523,7 +523,7 @@ body {
 #search-form-wrap {
   position: absolute;
   top: 15px;
-  width: 150px;
+  width: 350px;
   height: 30px;
   right: -150px;
   opacity: 0;
