@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title><![CDATA[WYQ Apps]]></title>
-  <subtitle><![CDATA[移动应用开发]]></subtitle>
+  <subtitle><![CDATA[Tiny Code]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://ioswyq.github.io/"/>
-  <updated>2015-12-26T15:40:22.000Z</updated>
+  <updated>2016-01-29T02:47:53.000Z</updated>
   <id>http://ioswyq.github.io/</id>
   
   <author>
@@ -13,6 +13,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[使用Freemind主题]]></title>
+    <link href="http://ioswyq.github.io/2016/01/29/hi-freemind-theme/"/>
+    <id>http://ioswyq.github.io/2016/01/29/hi-freemind-theme/</id>
+    <published>2016-01-29T02:33:02.000Z</published>
+    <updated>2016-01-29T02:47:53.000Z</updated>
+    <content type="html"><![CDATA[<p>更换hexo theme，使用freemind，主要是可以移动端展示，之前使用landscape-plus在移动端显示不正常。</p>
+<a id="more"></a>
+<h2 id="u6B65_u9AA4"><a href="#u6B65_u9AA4" class="headerlink" title="步骤"></a>步骤</h2><p>根据<a href="https://github.com/wzpan/hexo-theme-freemind" target="_blank" rel="external">Freemind</a>使用说明，一步一步的操作，简单明白。出现一点小问题就是，Categories和Tags的链接不正常没有显示，后来查看文档，发现自己看漏了。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p <span class="built_in">source</span>/categories</span><br><span class="line">mkdir -p <span class="built_in">source</span>/tags</span><br></pre></td></tr></table></figure>
+<p>创建文件source/categories/index.html<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">title: Categories</span><br><span class="line">layout: categories</span><br><span class="line">---</span><br></pre></td></tr></table></figure></p>
+<p>创建文件ource/tags/index.html<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">title: Tags</span><br><span class="line">layout: tags</span><br><span class="line">---</span><br></pre></td></tr></table></figure></p>
+<h2 id="u53C2_u8003"><a href="#u53C2_u8003" class="headerlink" title="参考"></a>参考</h2><p><a href="https://github.com/wzpan/hexo-theme-freemind" target="_blank" rel="external">Freemind</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>更换hexo theme，使用freemind，主要是可以移动端展示，之前使用landscape-plus在移动端显示不正常。</p>]]>
+    
+    </summary>
+    
+      <category term="freemind" scheme="http://ioswyq.github.io/tags/freemind/"/>
+    
+      <category term="hexo-theme" scheme="http://ioswyq.github.io/tags/hexo-theme/"/>
+    
+      <category term="other" scheme="http://ioswyq.github.io/categories/other/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[多个Github帐号的ssh配置]]></title>

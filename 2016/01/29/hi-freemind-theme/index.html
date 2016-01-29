@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hello Hexo 3.0 | WYQ Apps</title>
+  <title>使用Freemind主题 | WYQ Apps</title>
   <meta name="author" content="WYQApps">
   
   <meta name="description" content="iOS App 应用开发记录，分享一点小经验，记录自己的脑洞">
@@ -11,7 +11,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="Hello Hexo 3.0"/>
+  <meta property="og:title" content="使用Freemind主题"/>
   <meta property="og:site_name" content="WYQ Apps"/>
 
   
@@ -84,7 +84,7 @@
 
 	
 		<div class="page-header">		
-			<h1> Hello Hexo 3.0</h1>
+			<h1> 使用Freemind主题</h1>
 		</div>		
 	
 
@@ -101,16 +101,13 @@
 	<div class="mypage">		
 	  		
 
-	  <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+	  <p>更换hexo theme，使用freemind，主要是可以移动端展示，之前使用landscape-plus在移动端显示不正常。</p>
 <a id="more"></a>
-<h2 id="Quick_Start"><a href="#Quick_Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create_a_new_post"><a href="#Create_a_new_post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server"><a href="#Run_server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files"><a href="#Generate_static_files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites"><a href="#Deploy_to_remote_sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+<h2 id="u6B65_u9AA4"><a href="#u6B65_u9AA4" class="headerlink" title="步骤"></a>步骤</h2><p>根据<a href="https://github.com/wzpan/hexo-theme-freemind" target="_blank" rel="external">Freemind</a>使用说明，一步一步的操作，简单明白。出现一点小问题就是，Categories和Tags的链接不正常没有显示，后来查看文档，发现自己看漏了。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p <span class="built_in">source</span>/categories</span><br><span class="line">mkdir -p <span class="built_in">source</span>/tags</span><br></pre></td></tr></table></figure>
+<p>创建文件source/categories/index.html<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">title: Categories</span><br><span class="line">layout: categories</span><br><span class="line">---</span><br></pre></td></tr></table></figure></p>
+<p>创建文件ource/tags/index.html<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">title: Tags</span><br><span class="line">layout: tags</span><br><span class="line">---</span><br></pre></td></tr></table></figure></p>
+<h2 id="u53C2_u8003"><a href="#u53C2_u8003" class="headerlink" title="参考"></a>参考</h2><p><a href="https://github.com/wzpan/hexo-theme-freemind" target="_blank" rel="external">Freemind</a></p>
 	  
 	</div>
 
@@ -119,14 +116,14 @@
 	<div class="pagination">
 <ul class="pagination">
 	 
-				
-    	<li class="prev"><a href="/2015/12/26/multi-github-account-ssh/" class="alignleft prev"><i class="fa fa-arrow-circle-o-left"></i>上一页</a></li>
-  		
+		
+          <li class="prev disabled"><a><i class="fa fa-arrow-circle-o-left"></i>上一页</a></li>
+        
 
         <li><a href="/archives"><i class="fa fa-archive"></i>Archive</a></li>
 
 		
-          <li class="next disabled"><a>下一页<i class="fa fa-arrow-circle-o-right"></i></a></li>
+		   <li class="next"><a href="/2015/12/26/multi-github-account-ssh/" class="alignright next">下一页<i class="fa fa-arrow-circle-o-right"></i></a></li>         
         
 	
 </ul>
@@ -141,7 +138,7 @@
   <h2 class="title">留言</h2>
 
   
-  	 <div class="ds-thread" data-thread-key="2015/12/26/hello-world/" data-title="Hello Hexo 3.0" data-url="http://ioswyq.github.io/2015/12/26/hello-world/"></div>  
+  	 <div class="ds-thread" data-thread-key="2016/01/29/hi-freemind-theme/" data-title="使用Freemind主题" data-url="http://ioswyq.github.io/2016/01/29/hi-freemind-theme/"></div>  
   
 </section>
 
@@ -155,7 +152,7 @@
 	
 	<div class="meta-widget">
 	<i class="fa fa-clock-o"></i>
-	2015-12-26 
+	2016-01-29 
 	</div>
 	
 
@@ -179,7 +176,7 @@
 	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>		  
     <ul id="tags" class="tag_box list-unstyled collapse in">	  
 	    
-  <li><a href="/tags/hexo/">hexo<span>1</span></a></li>
+  <li><a href="/tags/freemind/">freemind<span>1</span></a></li> <li><a href="/tags/hexo-theme/">hexo-theme<span>1</span></a></li>
     </ul>
 	</div>
 		
